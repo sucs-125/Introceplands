@@ -48,16 +48,17 @@ export const licenseConfig: LicenseConfig = {
 
 export const friendLinkConfig: FriendLink[] = [
     {
+        name: 'John River',
+        avatar: './src/assets/JR.jpg',
+        url: 'https://blog.nakanashi.com',
+        description: 'パニッシュメント・ディス・ワールド！'
+    },
+    {
         name: 'Motues',
         avatar: 'https://www.motues.top/avatar.jpg',
         url: 'https://www.motues.top',
         description: 'Like River!'
-    },
-    {
-        name: 'Astro',
-        avatar: 'https://avatars.githubusercontent.com/u/44914786',
-        url: 'https://astro.build',
-        description: 'Build fast websites, faster.'
     }
+
     // Add more friend links here
 ]
