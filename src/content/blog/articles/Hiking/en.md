@@ -8,142 +8,122 @@ draft: false
 slugId: articles\Hiking
 ---
 
-I met an online friend I chatted with every day in real life.
+“I will become the first person to reach the summit of this mountain!”
 
-What I didn't expected is that, the one sitting across from me turned out to be a dog.
+I was filled with excitement.
 
-I looked him up and down. He was covered in smooth white fur, except for a big black patch around his left eye, as if he had been punched — or as if he were a pirate. The moment he saw me, he wagged his tail and pounced toward me, looking eager to jump up and lick my chin.
+The wind and snow roared. The rocks were cold and steep. Before me, the cliff was covered in blue ice. High above, sunlight struck the rocky platform at the summit and reflected a golden glow.
 
-I turned around and left.
+That was the place I was determined to conquer.
 
-“Wait! Why are you leaving? Just because I’m a dog?”
+I set out alone.
 
-The little dog spoke.
+My trekking pole drove firmly into the snow. My crampons bit firmly into the snow. And I, too, climbed upward through the snow with stubborn resolve. The wind cut against my face like knives, and cold air rose from beneath my feet, but my will to move forward did not weaken. A dead tree trunk became my shelter from the wind; a great rocky slope became my place of rest.
 
-Only then did I suddenly remember that his online username seemed to be **Sir**.
+Then, in the snowstorm, a human figure suddenly appeared.
 
-“Isn’t this basically fraud? People online always say the person you’re chatting with might just be a dog. Turns out it was actually true.”
+Had someone already beaten me to it?
 
-“When you chat with a person, you lower your head with your palm facing up. When you chat with a dog, you lower your head with your palm facing down. There’s not that much difference, really.”
+My heart sank. Anxious to see the person ahead more clearly, I hurried forward a few steps. The figure seemed to be sitting, yet it did not move. Another possibility arose in my mind, and I did not know whether to feel relieved or afraid.
 
-Sir lifted his chin and gestured toward the street. I looked over and saw that everyone along the roadside had their heads lowered, playing with their phones, showing joy, anger, sorrow, and delight to their screens. All at once, I found myself growing interested in this little dog.
+For a moment, the snow eased. The wind tore open my field of vision.
 
-“This is actually a popular disease of the new era, you know?” Sir said with a smile when he saw that I had stopped.
+The figure ahead appeared clearly at last.
 
-I shook my head.
+It was a frozen corpse, its hollow eyes staring fixedly forward. And beyond it stood an entire forest of corpses — some standing, some sitting, some lying face-down, all ragged and ruined, scattered across the devastated ground.
 
-“Don’t believe me? Watch.”
+Without exception, every pair of eyes was fixed on the way ahead.
 
-As he spoke, he strolled over to someone and bared his teeth, blocking their way. But the person did not react at all. They walked straight toward him and nearly stepped on his tail. Sir quickly hopped away in a few small steps.
+I was shaken.
 
-“Symptom one: turning a blind eye to information from the outside world.”
+I had never imagined that countless people before me had failed here. I felt sympathy and sorrow, but also a guilty trace of secret relief, because I would not become one of them.
 
-“Isn’t that just because you’re a dog? Not being noticed seems pretty normal.”
+Because they had not reached the summit.
 
-“Then you come here.”
+I wanted to leave this sea of bodies as quickly as possible. Yet the corpses along the path only grew more numerous, until they began to block my way. Ahead, the snow still fell heavily, and the path remained steep.
 
-Sir ran over and tugged at me. I turned and tried to run, but I was no match for his speed. To my surprise, he was surprisingly strong. He dragged me by the corner of my shirt, and with one stumble, I ended up right in front of a passerby.
+An ominous feeling seized me.
 
-“S-sorry… I…”
+Do not think. Just breathe.
 
-As someone with severe social anxiety, I hurried to come up with an explanation. How was I supposed to tell him that I had been tricked by a talking dog?
+I waved my hand, as if sweeping those stray thoughts out of my mind. My trekking pole drove even harder into the deep snow. My crampons bit even harder into the deep snow. And I, too, forced myself upward through the deep snow.
 
-But the person in front of me merely waved me off.
+The snow grew fiercer.
 
-“No need, thank you.”
+The wind pressed harder.
 
-Then he left.
+After an unknown length of time, I… finally… saw the summit.
 
-“Symptom two: turning a deaf ear to voices from the outside world.”
+But the sight before me made my knees go weak.
 
-Sir grinned. Annoyed, I pretended to swing at him, and he jumped away again, wagging his tail at me from a distance.
+The summit was on another mountain.
 
-The gray street was filled with passing crowds, and when I looked up, I could see only a narrow strip of sky. Orange clouds lay quietly before the curtain of the heavens, like cotton fibers suspended in wine. Beneath all of this, Sir looked as tiny as a little speck.
+A taller, steeper mountain.
 
-I caught up with him.
+The mountain I had climbed was merely attached to it — merely a necessary passage toward it.
 
-“You said this is a disease. Then how does it spread?”
+And I could see even more clearly that on that distant summit, a flag was already standing.
 
-“Through human emotions. And this virus loves feeding on people’s feelings. It slowly eats away at the host’s emotional experiences. In the end, the person turns into wood and can only reproduce by seeds.”
+So someone had reached it long ago.
 
-A thought struck me like a small pebble.
+The cold that had once been outside me suddenly entered my heart.
 
-“You mean people are evolving into trees?”
+What should I do?
 
-Sir raised his head and rolled his eyes at me. When he rolled his eyes, his right eye disappeared perfectly into his white fur, while his left eye became a blank space inside a black circle.
+I looked back. The road behind me had already stretched so far. I looked ahead. Another great mountain still waited before me.
 
-“You think that’s evolution? Let me tell you, humanity is not far from extinction. The intelligent creatures from hundreds of millions of years ago have all turned into trees by now. One forest fire, and they were gone. Humans are simply repeating the same process.”
+But I had already come this far. Perhaps if I only walked another distance like the one before, I would reach it. Yet when I thought about the supplies I had brought, I felt they might not be enough to carry me through the rest of the journey.
 
-“Then aren’t you worried? Once humans become trees, who’s going to feed you?”
+Caught between the two choices, I heard whispers drifting in with the wind.
 
-“Not worried at all. By then, little dogs will become the new humans. We’ll begin our own evolution from Peking Dog to Shandingdong Dog. So you can go in peace. All things move in cycles, and such is the way of the world. I’m only telling you this because you’re my only online friend.”
+I listened carefully.
 
-At that moment, Sir looked almost like a Buddha.
+The voice was clearly saying:
 
-I was speechless.
+“I will become the first person to reach the summit of this mountain!”
 
-“Move aside. Don’t get your tail stepped on again.”
+But this mountain had already been conquered.
 
-Sir gave a small bark and jumped away, making room for the passerby behind him.
+I looked down the slope and saw a vast, dark mass of people swarming up the mountain, rushing toward it as if possessed. Everyone was saying excitedly that they would reach the summit, that they would be the first.
 
-But in the next second, the passerby fell straight to the ground with a dull, hard thud.
+I withdrew my gaze and looked back toward the peak.
 
-I froze in terror. Sir began barking loudly.
+I had no choice.
 
-“Don’t just stand there! Call 911 already!”
+As long as I reached it before them, this journey would still have meaning. All my previous effort would not have been wasted.
 
-As he spoke, he went forward and sniffed around, then pulled a buzzing earbud out of the passerby’s ear. I hurriedly took out my phone, closed thirty-seven splash-screen ads, spent two full minutes doing so, and finally got through to emergency services.
+I raised my trekking pole high. It flashed in the cold sunlight.
 
-The ambulance came wailing and left wailing. Sir crouched down beside my leg.
+Then I drove it fiercely into the snow.
 
-“He can’t be saved. I smelled sawdust.”
+With a sharp crack, the trekking pole snapped.
 
-“It’s that serious? Then why aren’t people panicking?”
+I had no choice but to throw it away.
 
-“Because the people who can still panic are the ones still living in this world. But by now, almost no one lives in this world anymore. The virus has created a new world for its hosts. The hosts become spokespersons for that world and learn its language. In this way, the virus can naturally feed on the host’s experiences and emotions in the real world.
+Only then did I suddenly feel unbearably thirsty. I opened my thermos, but not a single drop of water flowed out. Everything inside had frozen into ice.
 
-“Late at night, when everything is quiet and the wind blows, you can hear a rustling sound. That is the lingering echo of terminally ill hosts in this world.”
+I bent down and drank the snow.
 
-A chill rose from the bottom of my heart. After seeing someone collapse right in front of me, I was beginning to believe what Sir had said.
+The wind gradually weakened.
 
-I lowered my head and, with my palm facing down, stroked Sir’s head. Sir gazed into the distance, and his eyes seemed a little wet.
+The snow gradually stopped.
 
-“But the vast majority of hosts suffer in the real world. That is why they embrace the virus. Panic? They only feel happy. If someone can turn into a tree and live out their life like that, who would say they were dissatisfied?”
+Warm sunlight shone down upon me, and my body slowly regained its heat. I felt strength filling every part of me.
 
-“I would be dissatisfied. I want to watch the sunrise and sunset while still being healthy,” I said.
+I walked forward, and suddenly realized that the summit had been right before me all along.
 
-Sir raised his head and gave me a mischievous smile.
+Why had I wanted to climb the mountain?
 
-“Then watch now.”
+I could no longer remember.
 
-The two of us fell silent.
+But at last, I stood on the summit, looking down upon the world, smiling at the dark mass of people below.
 
-The street seemed to stretch endlessly into the distance. I saw a small red sun bouncing downward, little by little, and soon the sky turned pale violet. It was the blue hour of the day. Mosquitoes and flies drifted through the air, and the skyscrapers gradually hid themselves away.
+I had gained nothing.
 
-After a long while, Sir spoke.
+And yet I had gained everything.
 
-“I have to go.”
+I died halfway up the mountain.
 
-“Where are you going?” I asked.
+Ahead of me was the distant summit.
 
-“Back to the real world.”
-
-“What does that mean?”
-
-“How did you meet me?” he asked in return.
-
-“Online…”
-
-What did he mean?
-
-“Wait. Are you saying I’m already sick?” I said blankly, as if hearing my own voice for the first time.
-
-Sir looked into my eyes.
-
-“I will always remember you.”
-
-At the place where the afterglow met the deep blue, Sir leapt into the sunset, drawing a white streak across the night sky.
-
-His final words still lingered beside my ears:
-
-“Always keep your palm facing down, and  for yourself, to pray.”
+Behind me was the crowd.
