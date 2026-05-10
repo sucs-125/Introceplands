@@ -9,7 +9,7 @@ If the Internet were a giant tree, then I have always wanted to have my own litt
 
 As I gradually gained a bit more energy and resources, I decided to start with a blog — building it while learning along the way.
 
-This blog was not designed by me. Many thanks to [Motues](https://www.motues.top "Go to blog") for creating this template, which allowed me to set up my blog in a hurry without having to deal with complicated code and design for the time being. If possible, please consider giving his [project](https://github.com/Motues/Momo) a Star.
+This blog was not designed by me. Many thanks to [Motues](https://www.motues.top ) for creating this template, which allowed me to set up my blog in a hurry without having to deal with complicated code and design for the time being. If possible, please consider giving his [project](https://github.com/Motues/Momo) a Star.
 
 Of course, this is not the final look of the site. I plan to first add more features based on this template, then build my own template with Astro, and eventually create a personal website from scratch.
 
