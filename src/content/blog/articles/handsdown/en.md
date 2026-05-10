@@ -146,4 +146,4 @@ At the place where the afterglow met the deep blue, Sir leapt into the sunset, d
 
 His final words still lingered beside my ears:
 
-“Always keep your palm facing down, and pray for yourself.”
+“Always keep your palm facing down, and  for yourself, to pray.”
