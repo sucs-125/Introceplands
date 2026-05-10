@@ -1,11 +1,11 @@
 ---
-title: Palm Facing Down
-pubDate: 2026-05-05
-description: I met an online friend who turned out to be a dog ?!
+title: Reach For The Summit
+pubDate: 2025-04-16
+description: Shocking! Another Mountaineering Accident — Or Is It?
 category: Articles
-image: "./Pictures/Cover.png"
+image: ""
 draft: false
-slugId: articles\handsdown
+slugId: articles\Hiking
 ---
 
 I met an online friend I chatted with every day in real life.
@@ -146,5 +146,4 @@ At the place where the afterglow met the deep blue, Sir leapt into the sunset, d
 
 His final words still lingered beside my ears:
 
-!!“Remember to keep your palm facing down, and that is for yourself, to pray.”!!
-
+“Always keep your palm facing down, and  for yourself, to pray.”
