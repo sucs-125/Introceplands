@@ -1,39 +1,33 @@
+# About Me
 
-Momo originates from Xiaohongshu's 📕, serving as every new user's initial nickname, symbolizing a fresh start. The blog's design philosophy stems from this concept, beginning with simplicity to strike a balance between complex functionality and minimalist aesthetics.
+Youner / Chen Muhang
 
-## ✨ Features
+A sophomore student majoring in Mathematics.
 
-* **Minimalist Design**: Clean page layout with black and white as primary colors, accented by blue
-* **Dark Mode**: Supports manual switching or automatic system adaptation
-* **Article Search**: Implements localized search using [pagefind](https://pagefind.app/)
-* **Internationalization (i18n)**: Supports multilingual switching, currently available in Simplified Chinese and English
-* **Mobile Optimization**: Components optimized for mobile devices, delivering the same experience as desktop browsers
-* **Commenting System**: Supports local deployment and Cloudflare deployment. Details in [Backend](https://github.com/Motues/Momo-Backend)
-* **Extensive Markdown syntax**: Supports Katex, Typst, and Alert components, GitHub cards, custom syntax, and more
-* Additional Core Features: Post categorization, directory, RSS subscription, text statistics, reading time
+If the Internet were a giant tree, then I have always wanted to have my own little bird’s nest on it, where I could hide all the things I collect and everything I write.  
+(Bird eggs? This metaphor does not include that part.)
 
+As I gradually gained a bit more energy and resources, I decided to start with a blog — building it while learning along the way.
 
-## 🚀 Quick Start
+This blog was not designed by me. Many thanks to [Motues](https://www.motues.top "Go to blog") for creating this template, which allowed me to set up my blog in a hurry without having to deal with complicated code and design for the time being. If possible, please consider giving his [project](https://github.com/Motues/Momo) a Star.
 
-1. Clone this project
-    ```bash
-    git clone https://github.com/Motues/Momo.git
-    cd Momo
-    ```
-2. Run `pnpm install` to install dependencies (use `npm install -g pnpm` to install `pnpm`)
-3. Run `pnpm dev` to start the development server
+Of course, this is not the final look of the site. I plan to first add more features based on this template, then build my own template with Astro, and eventually create a personal website from scratch.
 
-## 🔧 Configuration
+# What Is on This Website?
 
-Refer to the [Configuration Guide](/en/blog/intro/config) and read the corresponding articles for detailed information.
+This website is, and will probably remain for a long time, under construction.
 
-## 📚 Updates
+First, there are some short stories written by me. They are not updated very often, because inspiration is hard to come by. After studying mathematics, I feel as if my brain has become somewhat rigid, and those lively, spontaneous ideas rarely appear anymore. Perhaps this is where the fundamental conflict between the two disciplines lies.
 
-Refer to the [Update Guide](/en/blog/intro/release) for instructions on updating the project.
+Second, there are some essays — records of the trash inside my head and the life outside it. The writing in this section will not be polished much. Basically, I write whatever I feel like writing, and it is not really meant to serve a general audience. Still, if you are interested, feel free to take a look.
 
+Third, there is supposed to be a long serialized story. But that will only happen after two things are done: first, completing the overall story outline; second, resolving copyright-related issues. If you do not see a section for the serial, it means these two preparations are still unfinished. Considering my natural tendency to go with the flow, this serial is probably the difficult-to-hatch bird egg.
 
-## 📚 References
+Finally, there will also be some academic-related content, such as mathematics notes and thoughts on mathematical modeling. This part will also be updated casually — if you see it, it exists.
 
-* [Astro](https://astro.build/)
-* [Fuwari](https://github.com/saicaca/fuwari)
-* [Tyndall](https://github.com/moyuin-aka/tyndall-public)
+There may also be some content about learning and creation. However, lately, simply keeping up with my studies has already taken quite a lot of energy, and I often find myself in a state of anxiety. So for the short term, I may not add new burdens to myself.
+
+# Construction Log
+
+| 2026.05.10 | Initial version of the website established |
+| ---------- | ------------------------------------------ |

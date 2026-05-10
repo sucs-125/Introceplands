@@ -5,6 +5,7 @@ description: 网站配置
 category: 指南
 image: ""
 draft: false
+draft: true
 slugId: momo/intro/comment
 ---
 
@@ -64,5 +65,4 @@ Momo 支持添加评论功能，并提供两种部署方式，支持零服务器
     --momo-link-color: #fff;
 }
 ```
-
 
