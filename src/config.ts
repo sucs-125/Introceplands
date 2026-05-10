@@ -49,7 +49,7 @@ export const licenseConfig: LicenseConfig = {
 export const friendLinkConfig: FriendLink[] = [
     {
         name: 'John River',
-        avatar: './src/assets/JR.jpg',
+        avatar: 'https://blog.nakanashi.com/_astro/avatar.3mjAZgpV_Z1QdH8Q.webp',
         url: 'https://blog.nakanashi.com',
         description: 'パニッシュメント・ディス・ワールド！'
     },
