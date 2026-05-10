@@ -10,7 +10,7 @@ slugId: articles\handsdown
 
 I met an online friend I chatted with every day in real life.
 
-What I didn't realize is that, the one sitting across from me turned out to be a dog.
+What I didn't expected is that, the one sitting across from me turned out to be a dog.
 
 I looked him up and down. He was covered in smooth white fur, except for a big black patch around his left eye, as if he had been punched — or as if he were a pirate. The moment he saw me, he wagged his tail and pounced toward me, looking eager to jump up and lick my chin.
 
