@@ -36,7 +36,7 @@ export const profileConfig: ProfileConfig = {
     avatar: "assets/RedPanda.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
     name: "Youner",
     description: "Cor Cordium",
-    indexPage: "https://introcepland954.pages.dev/",
+    indexPage: "https://blog.younerest.com",
     startYear: 2026,
 }
 
