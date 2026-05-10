@@ -80,7 +80,7 @@ I listened carefully.
 
 The voice was clearly saying:
 
-“I will become the first person to reach the summit of this mountain!”
+**“I will become the first person to reach the summit of this mountain!”**
 
 But this mountain had already been conquered.
 

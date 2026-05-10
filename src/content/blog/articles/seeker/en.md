@@ -52,7 +52,7 @@ Once he stopped walking, he suddenly felt so light. He sat there alone in silenc
 
 Then, all of a sudden, he heard another voice beside his ear. It was so close that he was certain the person speaking was right next to him.
 
-“If you keep this up, you’ll die, you know.”
+**“If you keep this up, you’ll die, you know.”**
 
 He abruptly raised his head and saw a faint light moving slowly forward, growing farther and farther away from him. He realized that it was a torch just like his own, and he knew that someone like him had just passed by and said those brief words to him.
 
