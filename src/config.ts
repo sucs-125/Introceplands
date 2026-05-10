@@ -33,11 +33,11 @@ export const siteConfig: SiteConfig = {
 }
 
 export const profileConfig: ProfileConfig = {
-    avatar: "assets/Motues.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+    avatar: "assets/RedPanda.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
     name: "Youner",
-    description: "Life is colorful!",
-    indexPage: "https://www.motues.top",
-    startYear: 2024,
+    description: "Cor Cordium",
+    indexPage: "https://introcepland954.pages.dev/",
+    startYear: 2026,
 }
 
 export const licenseConfig: LicenseConfig = {
