@@ -90,7 +90,7 @@ But in the next second, the passerby fell straight to the ground with a dull, ha
 
 I froze in terror. Sir began barking loudly.
 
-“Don’t just stand there! Call 120!”
+“Don’t just stand there! Call 911 already!”
 
 As he spoke, he went forward and sniffed around, then pulled a buzzing earbud out of the passerby’s ear. I hurriedly took out my phone, closed thirty-seven splash-screen ads, spent two full minutes doing so, and finally got through to emergency services.
 
