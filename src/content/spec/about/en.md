@@ -27,7 +27,17 @@ Finally, there will also be some academic-related content, such as mathematics n
 
 There may also be some content about learning and creation. However, lately, simply keeping up with my studies has already taken quite a lot of energy, and I often find myself in a state of anxiety. So for the short term, I may not add new burdens to myself.
 
-# Construction Log
+# Changelog
+
+## V1.0
+
+2026.05.11
+
+1. The comment feature has been launched. I'm so sorry to inform you that deleting comments is not supported yet, but this will be improved in future updates.
+2. The Friends page has been optimized.
+3. Upcoming updates: comment deletion, better avatar fetching, and faster comment loading.
+
+# Overview Construction Log
 
 | 2026.05.10 | Initial version of the website established |
 | ---------- | ------------------------------------------ |

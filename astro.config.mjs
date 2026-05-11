@@ -24,7 +24,7 @@ import { siteConfig } from './src/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://introcepland954.pages.dev/', // Root URL of site
+  site: 'https://blog.younerest.com/', // Root URL of site
   i18n: {
     locales: ['zh-cn', 'en'],
     defaultLocale: 'zh-cn',
