@@ -20,7 +20,7 @@ I put on a very confused expression and began firing “diu diu diu” back at h
 
 Outside the window, flying birds swept across the curtain, and the sky suddenly darkened. Fireflies rushed into the heavens all at once, shifting into different constellations in the sky. I secretly took out my earphones, pulled up the hood of my sweatshirt, and started listening to music again. The song was called *Running till the end*.
 
-::music{id="2162565337"}
+::music{id="1873231851"}
 
 Without realizing it, I began swaying along with the song, my head bobbing rhythmically. Then the chorus arrived, and the song began to sing:
 
