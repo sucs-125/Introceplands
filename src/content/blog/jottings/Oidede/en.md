@@ -49,17 +49,21 @@ I began looking up the lyrics.
 ::::quote
 
 泳ぐ必要も 傷も無いのに何故か
+
 There's no need to swim, I'm not even hurt, yet for some reason
 
 覚えた息継ぎをして
+
 I take a breather like I learned to and go ahead
 
 どこまでも ただ 遠くへ
+
 Go somewhere, anywhere as long as it's far away
 
 ...
 
 おいでって おいでって おいでって なんで
+
 "Come here" "Come here" "Come here"
 
 ::::
