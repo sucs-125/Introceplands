@@ -21,9 +21,9 @@ export const siteConfig: SiteConfig = {
         enable: true // Whether to enable blog navigation in the blog footer
     },
     comments: {
-        enable: false, // Whether to enable comments
+        enable: true, // Whether to enable comments
         platform: "default", // Comment platform, set "default" to use Momo-backend, also supports "twikoo"
-        backendUrl: "https://api-momo.motues.top" // Backend URL for comments
+        backendUrl: "https://comment.younerest.com" // Backend URL for comments
     },
     theme: {
         AOS: true, // Whether to enable AOS (Animate On Scroll) for animations

@@ -1,0 +1,1 @@
+var e=`/assets/logo-COdJJKmV.svg`;export{e as t};
