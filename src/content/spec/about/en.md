@@ -31,6 +31,14 @@ There may also be some content about learning and creation. However, lately, sim
 
 ## V1.0
 
+2026.05.12
+
+1. Optimized comment avatar fetching. If the email address provided is a QQ Mail address, the comment avatar will now be automatically set to the corresponding QQ avatar.
+2. Added comment deletion. You can now delete your own comments. Please note that once the browser cache is cleared, previous comments can no longer be deleted. Also, when a parent comment is deleted, all of its child comments will be deleted as well.
+3. Slightly improved comment loading speed, reducing the loading time by about 1 second.
+4. Added internationalization support for frontend prompts related to comment deletion.
+5. Upcoming updates: internationalization support for backend prompts related to comment deletion, and a music component.
+
 2026.05.11
 
 1. The comment feature has been launched. I'm so sorry to inform you that deleting comments is not supported yet, but this will be improved in future updates.
