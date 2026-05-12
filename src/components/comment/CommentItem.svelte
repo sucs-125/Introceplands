@@ -116,7 +116,7 @@
       return;
     }
 
-    const confirmed = confirm(t('comments.confirmDelete') || '确定要删除这条评论吗？');
+    const confirmed = confirm(t('comments.confirmDelete') || '确定要删除这条评论及其所有回复吗？');
     if (!confirmed) return;
 
     try {

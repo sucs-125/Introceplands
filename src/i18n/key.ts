@@ -77,6 +77,7 @@ export interface Translation {
         deleteSuccess: string;
         deleteFailed: string;
         deleteError: string;
+        noDeletePermission: string;
         characters: string;
         words: string;
         contentTooLong: string;
