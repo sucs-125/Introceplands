@@ -73,6 +73,7 @@
   // 本地存储键名
   const STORAGE_KEY = 'comment_user_info';
   const STORAGE_KEY_DRAFT = 'momo_comment_draft';
+  const DELETE_TOKEN_PREFIX = 'momo_comment_delete_token:';
   let loaded = false;
 
   // 从本地存储加载用户信息
