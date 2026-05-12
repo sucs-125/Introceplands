@@ -42,7 +42,7 @@ At the far edge of the evening sky, a trace of pale purple had fallen. Yet a lig
 
 “Oi de de, oi de de…”
 
-My good friend appeared from who knew where and asked, “So what does ‘oi de de’ mean?”
+My good friend appeared from who knew where and asked, “So actually what does ‘oi de de’ mean?”
 
 I began looking up the lyrics.
 
@@ -102,9 +102,9 @@ Where was I supposed to go?
 
 I froze. Only the raindrops continued falling onto my hand.
 
-The little bird suddenly chirped with joy. It hopped once, then dove into the dark night.
+The little bird suddenly chirped with joy. It hopped once, then dove into the dark night!
 
-I cried out in surprise and looked down, only to find that the bird had begun to fly. In the night and rain, it steadied its wings and rushed toward the distant lights.
+I cried out in surprise and looked down, only to find that the bird had begun to fly. In the night and rain, it steadied its wings and rushed toward the distant lights!
 
 My cry instantly turned into delight. I braced myself against the railing, trying hard to follow the bird’s figure with my eyes. But the rain soon hid its body from sight.
 
