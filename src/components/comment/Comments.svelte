@@ -257,25 +257,12 @@
       });
       const data = await res.json();
 
-      //保存deleteToken到本地存储（待优化：确认后端返回字段是什么）
-      const createdComment =
-      data.data?.comment ||
-      data.data?.comments ||
-      data.data;
+      //保存deleteToken到本地存储
+      const commentId = data.data?.id;
+      const deleteToken = data.data?.deleteToken;
 
-      const createdCommentId =
-        createdComment?.id ??
-        createdComment?.comment_id ??
-        data.data?.id;
-
-      const deleteToken =
-        data.data?.deleteToken ??
-        data.data?.delete_token ??
-        createdComment?.deleteToken ??
-        createdComment?.delete_token;
-
-      if (createdCommentId && deleteToken) {
-        saveDeleteToken(createdCommentId, deleteToken);
+      if (commentId && deleteToken) {
+        saveDeleteToken(commentId, deleteToken);
       }
 
       alert(data.message || t('comments.submitSuccess') || '提交成功');
