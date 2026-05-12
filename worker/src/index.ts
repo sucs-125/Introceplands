@@ -5,7 +5,7 @@ import { getSetting } from './utils/settings'
 import { adminAuth } from './utils/auth'
 
 import { getComments } from './api/public/getComments'
-import { postComment } from './api/public/postComment'
+import { postComment,deleteOwnComment } from './api/public/postComment'
 import { adminLogin } from './api/admin/login'
 import { getSettings, updateSettings, testEmail } from './api/admin/settings'
 import { changePassword } from './api/admin/password'
@@ -29,7 +29,7 @@ app.use('/api/*', async (c, next) => {
 // API
 app.get('/api/comments', getComments)
 app.post('/api/comments', postComment)
-
+app.post('/api/comments/delete', deleteOwnComment);
 app.post('/admin/login', adminLogin)
 app.use('/admin/*', adminAuth)
 app.get('/admin/settings', getSettings);

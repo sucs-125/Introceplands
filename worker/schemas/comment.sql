@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS Comment (
     user_agent TEXT,
     content_text TEXT NOT NULL,
     content_html TEXT NOT NULL,
+    delete_token_hash TEXT,
     parent_id INTEGER,
     status TEXT DEFAULT 'approved',
     -- 建立自引用外键约束（父子评论关系）

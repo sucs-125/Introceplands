@@ -134,6 +134,37 @@
     return count;
   }
 
+  //删除评论的组件
+  function getCommentId(comment: any): string {
+  return String(comment.id ?? comment.comment_id ?? comment.uuid);
+  }
+
+  function getDeleteToken(commentId: string | number): string | null {
+    return localStorage.getItem(`${DELETE_TOKEN_PREFIX}${commentId}`);
+  }
+
+  function saveDeleteToken(commentId: string | number, token: string) {
+    localStorage.setItem(`${DELETE_TOKEN_PREFIX}${commentId}`, token);
+  }
+
+  function removeDeleteToken(commentId: string | number) {
+    localStorage.removeItem(`${DELETE_TOKEN_PREFIX}${commentId}`);
+  }
+
+  //用于给评论标记是否可被删除
+  function markDeletable(list: any[]): any[] {
+    return list.map((comment) => {
+      const id = getCommentId(comment);
+      const deleteToken = getDeleteToken(id);
+
+      return {
+        ...comment,
+        canDeleteByOwner: Boolean(deleteToken),
+        replies: comment.replies ? markDeletable(comment.replies) : [],
+      };
+    });
+  }
+
   async function loadComments(loadMore = false) {
     if (loadMore) {
       loadingMore = true;
@@ -146,7 +177,7 @@
       );
       if (!res.ok) throw new Error(t('comments.loadFailed') || '加载失败');
       const data = await res.json();
-      const newComments = data.data?.comments || [];
+      const newComments = markDeletable(data.data?.comments || []);
       if (page === 1) {
         comments = newComments;
       } else {
@@ -225,6 +256,28 @@
         }),
       });
       const data = await res.json();
+
+      //保存deleteToken到本地存储（待优化：确认后端返回字段是什么）
+      const createdComment =
+      data.data?.comment ||
+      data.data?.comments ||
+      data.data;
+
+      const createdCommentId =
+        createdComment?.id ??
+        createdComment?.comment_id ??
+        data.data?.id;
+
+      const deleteToken =
+        data.data?.deleteToken ??
+        data.data?.delete_token ??
+        createdComment?.deleteToken ??
+        createdComment?.delete_token;
+
+      if (createdCommentId && deleteToken) {
+        saveDeleteToken(createdCommentId, deleteToken);
+      }
+
       alert(data.message || t('comments.submitSuccess') || '提交成功');
       
       // 重置表单
@@ -250,7 +303,12 @@
 
   // 删除评论后的处理函数
   async function handleCommentDelete(e: CustomEvent) {
-    // 重新加载评论以反映删除
+    const commentId = e.detail?.id ?? e.detail?.commentId;
+    if (commentId) {
+      removeDeleteToken(commentId);
+    }
+
+    page = 1;
     await loadComments();
   }
 

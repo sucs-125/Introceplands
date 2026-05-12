@@ -1,6 +1,6 @@
 import { Context } from 'hono'
 import { Bindings } from '../../bindings'
-import { getCravatar } from '../../utils/getAvatar'
+import { getAvatar } from '../../utils/getAvatar'
 import { getSetting } from '../../utils/settings'
 
 export const getComments = async (c: Context<{ Bindings: Bindings }>) => {
@@ -40,7 +40,7 @@ export const getComments = async (c: Context<{ Bindings: Bindings }>) => {
       try {
         return {
           ...row,
-          avatar: await getCravatar(row.email),
+          avatar: await getAvatar(row.email),
           replies: [],
           isBlogger: row.email === adminEmail
         };

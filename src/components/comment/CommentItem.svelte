@@ -102,6 +102,49 @@
 
   const apiUrl = siteConfig.comments.backendUrl;
 
+  const DELETE_TOKEN_PREFIX = 'momo_comment_delete_token:';
+
+  function getDeleteToken(commentId: string | number): string | null {
+    return localStorage.getItem(`${DELETE_TOKEN_PREFIX}${commentId}`);
+  }
+
+  async function deleteOwnComment(commentId: string | number) {
+    const deleteToken = getDeleteToken(commentId);
+
+    if (!deleteToken) {
+      alert(t('comments.noDeletePermission') || '这个浏览器没有删除这条评论的权限');
+      return;
+    }
+
+    const confirmed = confirm(t('comments.confirmDelete') || '确定要删除这条评论吗？');
+    if (!confirmed) return;
+
+    try {
+      const res = await fetch(`${apiUrl}/api/comments/delete`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          id: commentId,
+          deleteToken,
+        }),
+      });
+
+      const data = await res.json().catch(() => ({}));
+
+      if (!res.ok) {
+        alert(data.message || t('comments.deleteFailed') || '删除失败');
+        return;
+      }
+
+      localStorage.removeItem(`${DELETE_TOKEN_PREFIX}${commentId}`);
+      alert(data.message || t('comments.deleteSuccess') || '删除成功');
+
+      dispatch('delete', { id: commentId });
+    } catch (err) {
+      alert(t('comments.deleteFailed') || '删除失败，请稍后再试');
+    }
+  }
+  
    function isValidHtml(str: string): boolean {
     const parser = new DOMParser();
     const doc = parser.parseFromString(str, 'text/html');
@@ -219,8 +262,17 @@
         replyEmail = email;
         replyUrl = url;
       }} class="hover:text-[var(--link-color)]">
-        {t('comments.reply')}
+        {t('comments.reply') || '回复'}
       </button>
+
+      //删除按钮：只在判断可以被删除的时候显示
+      {#if c.canDeleteByOwner}
+        <button
+          on:click={() => deleteOwnComment(c.id)}
+          class="hover:text-red-500 transition-colors">
+        {t('comments.delete') || '删除'}
+        </button>
+      {/if}
     </div>
 
     <!-- 回复表单 -->
@@ -350,6 +402,7 @@
               on:reply={(e) => dispatch('reply', e.detail)} 
               on:submit={(e) => dispatch('submit', e.detail)}
               on:cancel={() => dispatch('cancel')}
+              on:delete={(e) => dispatch('delete', e.detail)}
               replyingToId={replyingToId}
               on:userInfoChange={(e) => dispatch('userInfoChange', e.detail)} 
             />
@@ -378,7 +431,9 @@
               on:reply={(e) => dispatch('reply', e.detail)} 
               on:submit={(e) => dispatch('submit', e.detail)}
               on:cancel={() => dispatch('cancel')}
-              replyingToId={replyingToId} on:userInfoChange={(e) => dispatch('userInfoChange', e.detail)}
+              on:delete={(e) => dispatch('delete', e.detail)}
+              replyingToId={replyingToId}
+              on:userInfoChange={(e) => dispatch('userInfoChange', e.detail)}
             />
           </div>
         {/each}

@@ -34,6 +34,28 @@ function ipInCIDR(ip: string, cidr: string): boolean {
   return (ipNum & mask) >>> 0 === (rangeNum & mask) >>> 0;
 }
 
+function arrayBufferToHex(buffer: ArrayBuffer): string {
+  return Array.from(new Uint8Array(buffer))
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
+}
+
+async function sha256(text: string): Promise<string> {
+  const data = new TextEncoder().encode(text);
+  const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+  return arrayBufferToHex(hashBuffer);
+}
+
+//创建删除token
+function createDeleteToken(): string {
+  const bytes = new Uint8Array(32);
+  crypto.getRandomValues(bytes);
+
+  return Array.from(bytes)
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
+}
+
 async function checkIpBlacklist(env: Bindings, ip: string): Promise<boolean> {
   const blacklistStr = await getSetting(env, "ip_blacklist");
   if (!blacklistStr) return false;
@@ -124,12 +146,14 @@ export const postComment = async (c: Context<{ Bindings: Bindings }>) => {
 
   // 6. 写入 D1 数据库
   try {
-    const { success } = await c.env.MOMO_DB.prepare(`
+    const deleteToken = createDeleteToken();
+    const deleteTokenHash = await sha256(deleteToken);
+    const result = await c.env.MOMO_DB.prepare(`
       INSERT INTO Comment (
         pub_date, post_slug, author, email, url, ip_address,
         os, browser, device, user_agent, content_text, content_html,
-        parent_id, status
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        parent_id, status, delete_token_hash
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `).bind(
       new Date().toISOString(),
       data.post_slug,
@@ -144,10 +168,15 @@ export const postComment = async (c: Context<{ Bindings: Bindings }>) => {
       content,
       parseMarkdown(content),
       data.parent_id || null,
-      status
+      status,
+      deleteTokenHash
     ).run();
 
-    if (!success) throw new Error("Database insert failed");
+    if (!result.success) throw new Error("Database insert failed");
+
+    const commentId = result.meta?.last_row_id;
+
+    
 
     // 5. 发送邮件通知 (后台异步执行，不阻塞用户响应)
     if (await isEmailEnabled(c.env)) {
@@ -188,10 +217,69 @@ export const postComment = async (c: Context<{ Bindings: Bindings }>) => {
       console.log("No SMTP configuration found. Skipping email notification.");
     }
 
-    return c.json({ message: "Comment submitted" });
+    return c.json({
+      message: "Comment submitted",
+      data: {
+        id: commentId,
+        deleteToken,
+      },
+    });
 
   } catch (e: any) {
     console.error("Create Comment Error:", e);
+    return c.json({ message: "Internal Server Error" }, 500);
+  }
+};
+
+export const deleteOwnComment = async (c: any) => {
+  try {
+    const data = await c.req.json();
+    const id = data.id;
+    const deleteToken = data.deleteToken;
+
+    if (!id || !deleteToken) {
+      return c.json({ message: "Missing id or deleteToken" }, 400);
+    }
+
+    const tokenHash = await sha256(deleteToken);
+
+    const comment = await c.env.MOMO_DB.prepare(`
+      SELECT delete_token_hash
+      FROM Comment
+      WHERE id = ?
+    `).bind(id).first() as { delete_token_hash: string | null } | null;
+
+    if (!comment) {
+      return c.json({ message: "Comment not found" }, 404);
+    }
+
+    if (!comment.delete_token_hash || comment.delete_token_hash !== tokenHash) {
+      return c.json({ message: "No permission to delete this comment" }, 403);
+    }
+
+    const result = await c.env.MOMO_DB.prepare(`
+      WITH RECURSIVE subtree(id) AS (
+        SELECT id
+        FROM Comment
+        WHERE id = ?
+
+        UNION ALL
+
+        SELECT c.id
+        FROM Comment c
+        INNER JOIN subtree s ON c.parent_id = s.id
+      )
+      DELETE FROM Comment
+      WHERE id IN (SELECT id FROM subtree);
+    `).bind(id).run();
+
+    if (!result.success) {
+      throw new Error("Delete comment failed");
+    }
+
+    return c.json({ message: "Comment deleted" });
+  } catch (e: any) {
+    console.error("Delete Comment Error:", e);
     return c.json({ message: "Internal Server Error" }, 500);
   }
 };

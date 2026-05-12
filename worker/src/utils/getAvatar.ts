@@ -6,7 +6,7 @@
  * 2. 其他邮箱使用 Cravatar
  * 3. Cravatar 不存在时，由 open.motues.top 自动回退到生成头像
  */
-export const getCravatar = async (email: string): Promise<string> => {
+export const getAvatar = async (email: string): Promise<string> => {
   const cleanEmail = email.trim().toLowerCase();
 
   // 1. QQ 邮箱：使用 QQ 头像
