@@ -37,7 +37,7 @@ There may also be some content about learning and creation. However, lately, sim
 2. Added comment deletion. You can now delete your own comments. Please note that once the browser cache is cleared, previous comments can no longer be deleted. Also, when a parent comment is deleted, all of its child comments will be deleted as well.
 3. Slightly improved comment loading speed, reducing the loading time by about 1 second.
 4. Added internationalization support for frontend prompts related to comment deletion.
-5. Upcoming updates: internationalization support for backend prompts related to comment deletion, and a music component.
+5. Upcoming updates: internationalization support for backend prompts related to comment deletion, The like function of articles and comments, and a music component.
 
 2026.05.11
 
