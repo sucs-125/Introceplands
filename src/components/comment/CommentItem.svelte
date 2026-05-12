@@ -265,7 +265,6 @@
         {t('comments.reply') || '回复'}
       </button>
 
-      //删除按钮：只在判断可以被删除的时候显示
       {#if c.canDeleteByOwner}
         <button
           on:click={() => deleteOwnComment(c.id)}
