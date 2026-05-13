@@ -3,6 +3,7 @@
   import { onMount } from 'svelte';
   import { slide } from 'svelte/transition';
   import DOMPurify from 'dompurify';
+  import { getCommentApiMessage } from '@/utils/commentApiMessage';
   // 👇 自引用，递归必须这样导入
   import CommentItem from './CommentItem.svelte';
   import i18nit from '../../i18n/translation.ts';
@@ -132,12 +133,12 @@
       const data = await res.json().catch(() => ({}));
 
       if (!res.ok) {
-        alert(data.message || t('comments.deleteFailed') || '删除失败');
+        alert(getCommentApiMessage(t, data.message));
         return;
       }
 
       localStorage.removeItem(`${DELETE_TOKEN_PREFIX}${commentId}`);
-      alert(data.message || t('comments.deleteSuccess') || '删除成功');
+      alert(getCommentApiMessage(t, data.message));
 
       dispatch('delete', { id: commentId });
     } catch (err) {

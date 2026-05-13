@@ -5,6 +5,7 @@
   import i18nit from '../../i18n/translation.ts';
   import { parseMarkdown, validateMarkdown } from '@utils/markdown';
   import { fly } from 'svelte/transition';
+  import { getCommentApiMessage } from '@/utils/commentApiMessage';
 
 
   export let postSlug: string;
@@ -266,7 +267,7 @@
         saveDeleteToken(commentId, deleteToken);
       }
 
-      alert(data.message || t('comments.submitSuccess') || '提交成功');
+      alert(getCommentApiMessage(t, data.message)); //显示提交成功
       
       // 重置表单
       if (!replyData) {

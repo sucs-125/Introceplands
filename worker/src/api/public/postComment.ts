@@ -218,7 +218,7 @@ export const postComment = async (c: Context<{ Bindings: Bindings }>) => {
     }
 
     return c.json({
-      message: "Comment submitted",
+      message: "COMMENT_SUBMITTED",
       data: {
         id: commentId,
         deleteToken,
@@ -238,7 +238,7 @@ export const deleteOwnComment = async (c: any) => {
     const deleteToken = data.deleteToken;
 
     if (!id || !deleteToken) {
-      return c.json({ message: "Missing id or deleteToken" }, 400);
+      return c.json({ message: "MISSING_DELETE_TOKEN" }, 400);
     }
 
     const tokenHash = await sha256(deleteToken);
@@ -250,11 +250,11 @@ export const deleteOwnComment = async (c: any) => {
     `).bind(id).first() as { delete_token_hash: string | null } | null;
 
     if (!comment) {
-      return c.json({ message: "Comment not found" }, 404);
+      return c.json({ message: "COMMENT_NOT_FOUND" }, 404);
     }
 
     if (!comment.delete_token_hash || comment.delete_token_hash !== tokenHash) {
-      return c.json({ message: "No permission to delete this comment" }, 403);
+      return c.json({ message: "NO_DELETE_PERMISSION" }, 403);
     }
 
     const result = await c.env.MOMO_DB.prepare(`
@@ -277,9 +277,9 @@ export const deleteOwnComment = async (c: any) => {
       throw new Error("Delete comment failed");
     }
 
-    return c.json({ message: "Comment deleted" });
+    return c.json({ message: "COMMENT_DELETED" });
   } catch (e: any) {
     console.error("Delete Comment Error:", e);
-    return c.json({ message: "Internal Server Error" }, 500);
+    return c.json({ message: "INTERNAL_SERVER_ERROR" }, 500);
   }
 };

@@ -71,6 +71,10 @@ export interface Translation {
         loadFailed: string;
         submitSuccess: string;
         submitFailed: string;
+        missingDeleteToken: string;
+        commentNotFound: string;
+        serverError: string;
+        operationFailed: string;
         fillRequired: string;
         confirmDelete: string;
         delete: string;
