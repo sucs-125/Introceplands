@@ -111,7 +111,7 @@ const translation: Translation = {
     },
     page404: {
         title: "404 - Void Realm",
-        subTitle: "It looks like you've stumbled into a code wasteland that hasn't been developed yet.",
+        subTitle: "Red panda is upset, but he is just a little red panda.",
         backToHome: "Home",
         backToPreview: "Previous Page",
         errorCode: "Error Code: 404 - Void Realm",

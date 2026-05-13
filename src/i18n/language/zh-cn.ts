@@ -111,7 +111,7 @@ const translation: Translation = {
     },
     page404: {
         title: "404 - 虚无之境",
-        subTitle: "看起来你闯入了一片代码荒原，这里还没有被开发出来。",
+        subTitle: "小熊猫很生气，但他只是小熊猫而已。",
         backToHome: "返回首页",
         backToPreview: "返回上一页",
         errorCode: "错误代码：404 - 虚无之境",
