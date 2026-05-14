@@ -31,6 +31,12 @@ There may also be some content about learning and creation. However, lately, sim
 
 ## V1.0
 
+2025.05.14
+
+1. Added the like function of articles
+2. Supported internationalization of backend prompts related to comment deletion
+3. Upcoming updates: The like function of comments, and a music component.
+
 2026.05.12
 
 1. Optimized comment avatar fetching. If the email address provided is a QQ Mail address, the comment avatar will now be automatically set to the corresponding QQ avatar.
