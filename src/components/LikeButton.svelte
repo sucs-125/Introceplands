@@ -37,7 +37,7 @@
       liked = status.liked;
     } catch (err) {
       console.warn('Failed to update like:', err);
-      alert(t('comments.likeFailed') || '点赞失败，请稍后再试');
+      alert(t('likes.likeFailed') || '点赞失败，请稍后再试');
     } finally {
       updating = false;
     }
@@ -50,7 +50,7 @@
   disabled={loading || updating}
   class="inline-flex items-center gap-1.5 rounded-full border border-[var(--button-border-color)] px-3 py-1.5 text-sm text-[var(--text-color)] hover:border-[var(--link-color)] hover:text-[var(--link-color)] transition-colors disabled:opacity-60"
   aria-pressed={liked}
-  title={liked ? (t('comments.unlike') || '取消点赞') : (t('comments.like') || '点赞')}
+  title={liked ? (t('likes.unlike') || '取消点赞') : (t('likes.like') || '点赞')}
 >
   <span class={liked ? 'text-red-500' : ''}>
     {liked ? '♥' : '♡'}
