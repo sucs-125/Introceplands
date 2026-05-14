@@ -10,11 +10,13 @@ import LicenseCard from '@components/misc/LicenseCard.astro'
 import Comments from '@components/comment/Comments.svelte'
 import Twikoo from '@components/comment/thirdparty/twikoo.astro'
 import BlogNavi from '@components/control/BlogNavi.astro'
+import LikeButton from '@/components/LikeButton.svelte';
 
 import { getCollection, render } from 'astro:content'
 import { i18n } from "astro:config/client";
 import i18nit from '@i18n/translation'
 import { Icon } from "astro-icon/components";
+
 
 import { blogCoverUrl } from '@/utils/url-utils'
 import { formatFullDate } from '@/utils/time'
@@ -127,7 +129,17 @@ const { remarkPluginFrontmatter } = await render(entry);
         )}
         <Markdown class="mb-6 mt-10 markdown-content onload-animation">
             <Content />
+
         </Markdown>
+        <div class="mt-8 mb-6 flex justify-center">
+            <LikeButton
+                client:load
+                targetType="post"
+                targetId={entry.data.slugId}
+                language={currentLang}
+            />
+        </div>
+        
         {licenseConfig.enable &&
         <LicenseCard title={entry.data.title} pubDate={entry.data.pubDate}/>
         }

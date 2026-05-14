@@ -3,9 +3,9 @@ import { Bindings } from './bindings'
 import { customCors } from './utils/cors'
 import { getSetting } from './utils/settings'
 import { adminAuth } from './utils/auth'
-
 import { getComments } from './api/public/getComments'
 import { postComment,deleteOwnComment } from './api/public/postComment'
+import { getLikeStatus, toggleLike } from './api/public/likes'
 import { adminLogin } from './api/admin/login'
 import { getSettings, updateSettings, testEmail } from './api/admin/settings'
 import { changePassword } from './api/admin/password'
@@ -30,6 +30,8 @@ app.use('/api/*', async (c, next) => {
 app.get('/api/comments', getComments)
 app.post('/api/comments', postComment)
 app.post('/api/comments/delete', deleteOwnComment);
+app.get('/api/likes', getLikeStatus)
+app.post('/api/likes/toggle', toggleLike)
 app.post('/admin/login', adminLogin)
 app.use('/admin/*', adminAuth)
 app.get('/admin/settings', getSettings);

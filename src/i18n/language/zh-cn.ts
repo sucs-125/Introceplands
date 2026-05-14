@@ -101,6 +101,11 @@ const translation: Translation = {
         image: "图片",
         list: "列表",
     },
+    likes:{
+        like: '点赞',
+        unlike: '取消点赞',
+        likeFailed: '点赞失败，请稍后再试',
+    },
     langNote: {
         note: "注意：",
         description: "当前页面不支持简体中文，使用默认语言版本"

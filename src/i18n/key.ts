@@ -99,6 +99,11 @@ export interface Translation {
         image: string;
         list: string;
     },
+    likes:{
+        like: string,
+        unlike: string,
+        likeFailed: string,
+    },
     langNote: {
         note: string;
         description: string;

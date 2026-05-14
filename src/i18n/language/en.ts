@@ -101,6 +101,11 @@ const translation: Translation = {
         image: "Image",
         list: "List",
     },
+    likes:{
+        like: 'Like',
+        unlike: 'Unlike',
+        likeFailed: 'Failed to update like. Please try again later.',
+    },
     langNote: {
         note: "Note: ",
         description: "This page does not support English, using the default language version"

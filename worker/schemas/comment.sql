@@ -20,6 +20,15 @@ CREATE TABLE IF NOT EXISTS Comment (
     FOREIGN KEY (parent_id) REFERENCES Comment (id) ON DELETE SET NULL
 );
 
+CREATE TABLE IF NOT EXISTS LikeRecord (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    target_type TEXT NOT NULL,
+    target_id TEXT NOT NULL,
+    visitor_id TEXT NOT NULL,
+    created_at TEXT NOT NULL,
+    UNIQUE(target_type, target_id, visitor_id)
+);"
+
 -- Settings table for web-based configuration
 CREATE TABLE IF NOT EXISTS Settings (
     key TEXT PRIMARY KEY,
